@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 
 namespace TDD_Kata_Contains_Duplicate_II_Leetcode
 {
@@ -6,23 +6,18 @@ namespace TDD_Kata_Contains_Duplicate_II_Leetcode
     {
         internal object ContainsNearByDuplicate(int[] nums, int k)
         {
-            if(k <= 0)
+            if (k <= 0) return false;
+
+            var dict = new Dictionary<int, int>();
+            for (int i = 0; i < nums.Length; i++)
             {
-                return false;
+                if (dict.ContainsKey(nums[i]) && i - dict[nums[i]] <= k)
+                    return true;
+                if (i >= k) dict.Remove(nums[i - k]);
+                dict.Add(nums[i], i);
             }
-            else
-            {
-                for (int i = 0; i < nums.Length-1; i++)
-                {
-                    for(int j = i+1; j< nums.Length; j++ )
-                    {
-                        if (nums[j] == nums[i] && Math.Abs(j - i) <= k)
-                            return true;
-                    }
-                }
-                return false;
-            }
-            
+
+            return false;
         }
     }
 }
