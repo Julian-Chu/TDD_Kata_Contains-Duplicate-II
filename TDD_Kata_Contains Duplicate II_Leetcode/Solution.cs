@@ -6,11 +6,22 @@ namespace TDD_Kata_Contains_Duplicate_II_Leetcode
     {
         internal object ContainsNearByDuplicate(int[] nums, int k)
         {
-            if(k <=0)
+            if(k <= 0)
             {
                 return false;
             }
-            throw new NotImplementedException();
+            else
+            {
+                for (int i = 0; i < nums.Length-1; i++)
+                {
+                    for(int j = i+1; j< nums.Length; j++ )
+                    {
+                        if (nums[j] == nums[i])
+                            throw new NotImplementedException();
+                    }
+                }
+                return false;
+            }
             
         }
     }
