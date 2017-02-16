@@ -43,5 +43,20 @@ namespace TDD_Kata_Contains_Duplicate_II_Leetcode
             //Assert
             Assert.AreEqual(expected,  actual);
         }
+
+        [TestMethod]
+        public void ContainsNearByDuplicate_Give_nums_1_1_ksIs1_Returns_true()
+        {
+            //Assign
+            int[] nums = { 1, 1 };
+            int k = 1;
+
+            //Act
+            var expected = true;
+            var actual = solution.ContainsNearByDuplicate(nums, k);
+
+            //Assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
