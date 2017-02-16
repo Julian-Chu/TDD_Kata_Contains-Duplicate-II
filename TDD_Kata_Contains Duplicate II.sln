@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD_Kata_Contains Duplicate II_Leetcode", "TDD_Kata_Contains Duplicate II_Leetcode\TDD_Kata_Contains Duplicate II_Leetcode.csproj", "{88F0F59B-0578-495A-BEFB-4A62AEF9334F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD_Kata_Contains Duplicate II", "TDD_Kata_Contains Duplicate II_Leetcode\TDD_Kata_Contains Duplicate II.csproj", "{88F0F59B-0578-495A-BEFB-4A62AEF9334F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
