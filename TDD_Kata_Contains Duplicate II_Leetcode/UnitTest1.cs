@@ -13,7 +13,7 @@ namespace TDD_Kata_Contains_Duplicate_II_Leetcode
             solution = new Solution();
         }
 
-        //Business logic: k must bigger than 0
+        //Business logic: k must be greater than 0
         [TestMethod]
         public void ContainsNearbyDuplicate_Given_kIsZero_Return_False()
         {
