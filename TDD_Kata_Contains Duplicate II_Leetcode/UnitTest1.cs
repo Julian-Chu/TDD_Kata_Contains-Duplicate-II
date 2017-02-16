@@ -45,7 +45,7 @@ namespace TDD_Kata_Contains_Duplicate_II_Leetcode
         }
 
         [TestMethod]
-        public void ContainsNearByDuplicate_Give_nums_1_1_ksIs1_Returns_true()
+        public void ContainsNearByDuplicate_Give_nums_1_1_kIs1_Returns_true()
         {
             //Assign
             int[] nums = { 1, 1 };

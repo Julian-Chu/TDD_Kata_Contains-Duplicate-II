@@ -16,8 +16,8 @@ namespace TDD_Kata_Contains_Duplicate_II_Leetcode
                 {
                     for(int j = i+1; j< nums.Length; j++ )
                     {
-                        if (nums[j] == nums[i])
-                            throw new NotImplementedException();
+                        if (nums[j] == nums[i] && Math.Abs(j - i) <= k)
+                            return true;
                     }
                 }
                 return false;
